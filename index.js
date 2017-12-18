@@ -24,7 +24,6 @@ function viewCart() {
     return "come back to me"
   }
 }
-}
 
 function total() {
   // write your code here
