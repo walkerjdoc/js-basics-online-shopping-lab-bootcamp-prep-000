@@ -46,16 +46,11 @@ for(let i=0; i < cart.length; i++){
 function total() {
   var cumulativeTotal = 0
   for(let i=0; i < cart.length; i++){
-    var item = Object.keys(cart[i])[0]
-    var priceString = cart[i][item]
-    var priceInteger = parseInt(priceString)
-    prices.push(priceInteger)
+    var item = Object.keys(cart[i])[0];
+    var price = cart[i][item];
+  cumulativeTotal = cumulativeTotal + price;
   }
-  function sum(numbers){
-    return numbers.reduce(function(a,b) {
-      return a + b
-    });
-  }
+  return cumulativeTotal
   console.log(cumulativeTotal)
 }
 
