@@ -23,15 +23,17 @@ function viewCart() {
 for(let i=0; i < cart.length; i++){
   var item = Object.keys(cart[i])[0]
   var price = cart[i][item]
+  allItemsAndPrices.push(`${item} at $${price}`)
 }
-  if (0 = cart.length){
-    console.log("Your shopping cart is empty.")
+  if (cart.length == 0){
+    console.log(`Your shopping cart is empty.`)
   }
-  else if (cart.length=1){
-    console.log(`In your cart, you have ${cart.slice(0)} at ${cart.slice(1)}.`)
+  else if (cart.length== 1){
+    console.log(`In your cart, you have ${allItemsAndPrices}.`)
   }
-  else if (cart.length >1){
-    
+  else if (cart.length == 2){
+    console.log(`In your cart, you have ${allItemsAndPrices(0)} and ${allItemsAndPrices(1)}.`)
+
   }
   }
 }
