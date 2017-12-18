@@ -56,7 +56,8 @@ function total() {
       return a + b
     });
   }
-  console.log(sum([prices]))
+  var total = sum(prices);
+  console.log(`${total}``)
 }
 
 function removeFromCart(item) {
