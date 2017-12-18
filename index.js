@@ -38,7 +38,7 @@ for(let i=0; i < cart.length; i++){
     for(let i = 0; i < (cart.length -1); i++){
       allExceptLastItem.push(allItemsAndPrices[i])
     }
-    finalItem.push(` and${allItemsAndPrices[cart[-1]]}`)
+    finalItem.push(` and${allItemsAndPrices[-1]}`)
     console.log (`In your cart, you have${allExceptLastItem},${finalItem}.`)
   }
 }
