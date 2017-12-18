@@ -44,7 +44,7 @@ for(let i=0; i < cart.length; i++){
 }
 
 function total() {
-  var prices = []
+  var cumulativeTotal = 0
   for(let i=0; i < cart.length; i++){
     var item = Object.keys(cart[i])[0]
     var priceString = cart[i][item]
@@ -56,7 +56,7 @@ function total() {
       return a + b
     });
   }
-  console.log(`${sum([prices])}`)
+  console.log(cumulativeTotal)
 }
 
 function removeFromCart(item) {
