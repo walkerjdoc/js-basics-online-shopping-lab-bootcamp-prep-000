@@ -21,7 +21,7 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   else{
-    
+    return "come back to me"
   }
 }
 }
