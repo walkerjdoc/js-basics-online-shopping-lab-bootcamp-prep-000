@@ -50,7 +50,7 @@ function total() {
     var price = cart[i][item]
     prices.push(parseInt(price))
   }
-  console.log(sum([prices]))
+  console.log(sum([prices]));
 }
 
 function removeFromCart(item) {
