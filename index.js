@@ -32,7 +32,7 @@ for(let i=0; i < cart.length; i++){
     console.log(`In your cart, you have${allItemsAndPrices}.`)
   }
   else if (cart.length == 2){
-    console.log(`In your cart, you have${allItemsAndPrices[0]} and ${allItemsAndPrices[1]}.`)
+    console.log(`In your cart, you have${allItemsAndPrices[0]} and${allItemsAndPrices[1]}.`)
   }
   else {
     for(let i = 0; i < (cart.length -1); i++){
