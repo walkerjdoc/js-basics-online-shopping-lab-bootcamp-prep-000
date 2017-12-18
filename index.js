@@ -23,7 +23,7 @@ function viewCart() {
 for(let i=0; i < cart.length; i++){
   var item = Object.keys(cart[i])[0]
   var price = cart[i][item]
-  allItemsAndPrices.push(`${item} at $${price}`)
+  allItemsAndPrices.push(` ${item} at $${price}`)
 }
   if (cart.length == 0){
     console.log(`Your shopping cart is empty.`)
