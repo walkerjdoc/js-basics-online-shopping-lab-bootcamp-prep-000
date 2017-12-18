@@ -47,8 +47,9 @@ function total() {
   var prices = []
   for(let i=0; i < cart.length; i++){
     var item = Object.keys(cart[i])[0]
-    var price = cart[i][item]
-    prices.push(parseInt(price))
+    var priceString = cart[i][item]
+    var priceInteger = parseInt(priceString)
+    prices.push(priceInteger)
   }
   function sum(numbers){
     return numbers.reduce(function(a,b) {
