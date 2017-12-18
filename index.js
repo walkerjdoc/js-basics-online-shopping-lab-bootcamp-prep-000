@@ -50,6 +50,10 @@ function total() {
     var price = cart[i][item]
     allItemsAndPrices.push(parseInt(price))
   }
+  function getSum(total,num){
+    return total + num;
+  }
+  console.log(getSum(prices))
 }
 
 function removeFromCart(item) {
