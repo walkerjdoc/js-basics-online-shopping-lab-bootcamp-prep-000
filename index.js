@@ -57,7 +57,7 @@ function total() {
     });
   }
   var total = sum(prices);
-  console.log(`${total}``)
+  console.log(`${total}`)
 }
 
 function removeFromCart(item) {
