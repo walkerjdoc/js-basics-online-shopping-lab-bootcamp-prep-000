@@ -33,7 +33,9 @@ for(let i=0; i < cart.length; i++){
   }
   else if (cart.length == 2){
     console.log(`In your cart, you have ${allItemsAndPrices(0)} and ${allItemsAndPrices(1)}.`)
-
+  }
+  else {
+    
   }
   }
 }
